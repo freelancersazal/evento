@@ -29,7 +29,6 @@ $(function () {
     });
 
 
-
     //======EVENT SLIDER====== 
     $('.enent_slider').slick({
         slidesToShow: 3,
@@ -121,6 +120,7 @@ $(function () {
         ]
     });
 
+
     //======BLOG SLIDER====== 
     $('.blog_slider').slick({
         slidesToShow: 1,
@@ -132,6 +132,85 @@ $(function () {
         nextArrow: '<i class="fad fa-arrow-alt-right nextArrow"></i>',
         prevArrow: '<i class="fad fa-arrow-alt-left prevArrow"></i>',
     });
+
+
+    //======NICE SELECT=========
+    $('#select_js').niceSelect();
+    $('#select_js2').niceSelect();
+    $('#select_js3').niceSelect();
+
+
+
+    //=====STICKY SIDEBAR===== 
+    $("#sticky_sidebar").stickit({
+        top: 80,
+    })
+
+
+
+    //*=======EVENT DETAILS SLIDER====== 
+    $('.event_det_slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: false,
+        arrows: true,
+        nextArrow: '<i class="fad fa-arrow-alt-right nextArrow"></i>',
+        prevArrow: '<i class="fad fa-arrow-alt-left prevArrow"></i>',
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
+
+    //*==========SCROLL BUTTON==========  
+    $('.wsus__scroll_btn').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0,
+        }, 500);
+    });
+
+    $(window).on('scroll', function () {
+        var scrolling = $(this).scrollTop();
+
+        if (scrolling > 300) {
+            $('.wsus__scroll_btn').fadeIn();
+        } else {
+            $('.wsus__scroll_btn').fadeOut();
+        }
+    });
+
+
+
+
+
+
+
 
 
 
