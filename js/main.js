@@ -148,6 +148,11 @@ $(function () {
 
 
 
+    //=== main.js ===
+    $('.venobox').venobox();
+
+
+
     //*=======EVENT DETAILS SLIDER====== 
     $('.event_det_slider').slick({
         slidesToShow: 4,
