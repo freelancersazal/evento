@@ -231,11 +231,11 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding: 20px 4%
+    padding: 20px 4%;
 }
 
 .vbox-container img {
-    max-width: 100%;
+    max-width: 900px;
     height: auto
 }
 
