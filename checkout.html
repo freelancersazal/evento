@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/spacing.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/venobox.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -101,11 +100,10 @@
     <section class="wsus__breadcrumb" style="background: url(images/slider_2.jpg);">
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
-                <h1>events details</h1>
+                <h1>checkout</h1>
                 <ul class="d-flex flex-wrap">
                     <li><a href="#">home</a></li>
-                    <li><a href="#">event</a></li>
-                    <li>event details</li>
+                    <li>checkout</li>
                 </ul>
             </div>
         </div>
@@ -113,116 +111,138 @@
     <!-- =========BREADCRUMB END============= -->
 
 
-    <!-- =========EVENT DETAILS START=========== -->
-    <section class="wsus__event_details mt_100 xs_mt_70 mb_100 xs_mb_70">
+    <!-- =========CHECKOUT PAGE START=========== -->
+    <section class="wsus__checkout mt_130 xs_mt_80">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-lg-8">
-                    <div class="wsus__event_details_area">
-                        <div class="wsus__event_details_img">
-                            <img src="images/slider_2.jpg" alt="events" class="img-fluid w-100">
-                            <div class="simply-countdown simply-countdown-one"></div>
-                        </div>
-                        <div class="wsus__event_details_text">
-                            <h2>details</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ipsam nobis officia
-                                architecto quod magnam mollitia recusandae, aut porro consequuntur temporibus facere
-                                quibusdam odit libero omnis ullam quos quo. Nisi ducimus molestiae accusantium rerum!
-                                Officiis alias eligendi modi iste explicabo.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem delectus minima
-                                earum laudantium voluptates iusto ab pariatur ducimus rerum impedit facere dolorem, nemo
-                                laboriosam repellat.</p>
-
-                            <h2>Inclusions</h2>
-                            <ul class="d-flex flex-wrap mt_10">
-                                <li>Return Flight Tickets</li>
-                                <li>All Local/Airport Transfers</li>
-                                <li>Resort Accomodation</li>
-                                <li>All Meals Included</li>
-                                <li>Adventure Activities</li>
-                                <li>Erotic Games</li>
-                                <li>Local Guides</li>
-                                <li>Support Staff</li>
-                                <li>Personal Security</li>
-                                <li>VISA Fees & Medical Insurance</li>
-                            </ul>
-                            <h2>gallery</h2>
-                            <div class="row event_det_slider">
-                                <div class="col-xl-3 event_gallery">
-                                    <a class="venobox gallery_item" data-gall="gallery01" href="images/event2_1.jpg">
-                                        <img src="images/event2_1.jpg" alt="instagram" class="img-fluid w-100">
-                                        <div class="wsus__portfolio_overlay">
-                                            <span class="view"><i class="far fa-eye"></i></span>
-                                        </div>
-                                    </a>
+                    <div class="wsus__checkout_form">
+                        <div class="row">
+                            <div class="col-12 mb_20">
+                                <h2>Shipping Address</h2>
+                            </div>
+                            <div class="col-xl-6">
+                                <label>First name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="col-xl-6">
+                                <label>Last name</label>
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div class="col-xl-6">
+                                <label>Email address</label>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="col-xl-6">
+                                <label>Phone number</label>
+                                <input type="text" placeholder="Phone">
+                            </div>
+                            <div class="col-xl-6">
+                                <label>Company</label>
+                                <input type="text" placeholder="Company">
+                            </div>
+                            <div class="col-xl-6">
+                                <label>Country</label>
+                                <div class="wsus__select_area">
+                                    <select id="select_js">
+                                        <option value="">Select country </option>
+                                        <option value="">Bangladesh</option>
+                                        <option value="">Japan</option>
+                                        <option value="">Singapore</option>
+                                        <option value="">Thailand</option>
+                                        <option value="">Korea</option>
+                                    </select>
                                 </div>
-                                <div class="col-xl-3 event_gallery">
-                                    <a class="venobox gallery_item" data-gall="gallery01" href="images/event2_2.jpg">
-                                        <img src="images/event2_2.jpg" alt="instagram" class="img-fluid w-100">
-                                        <div class="wsus__portfolio_overlay">
-                                            <span class="view"><i class="far fa-eye"></i></span>
-                                        </div>
-                                    </a>
+                            </div>
+                            <div class="col-xl-6">
+                                <label>City</label>
+                                <div class="wsus__select_area">
+                                    <select id="select_js2">
+                                        <option value="">Select city </option>
+                                        <option value="">Bangladesh</option>
+                                        <option value="">Japan</option>
+                                        <option value="">Singapore</option>
+                                        <option value="">Thailand</option>
+                                        <option value="">Korea</option>
+                                    </select>
                                 </div>
-                                <div class="col-xl-3 event_gallery">
-                                    <a class="venobox gallery_item" data-gall="gallery01" href="images/event2_3.jpg">
-                                        <img src="images/event2_3.jpg" alt="instagram" class="img-fluid w-100">
-                                        <div class="wsus__portfolio_overlay">
-                                            <span class="view"><i class="far fa-eye"></i></span>
-                                        </div>
-                                    </a>
+                            </div>
+                            <div class="col-xl-6">
+                                <label>Zip code</label>
+                                <input type="text" placeholder="Zip">
+                            </div>
+                            <div class="col-xl-6">
+                                <label>Address 1</label>
+                                <input type="text" placeholder="Address">
+                            </div>
+                            <div class="col-xl-6">
+                                <label>Address 2</label>
+                                <input type="text" placeholder="Address 2">
+                            </div>
+                            <div class="col-12 mt_20 mb_25">
+                                <h2>Billing Address</h2>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check1">
+                                    <label class="form-check-label" for="check1">Same as shipping address</label>
                                 </div>
-                                <div class="col-xl-3 event_gallery">
-                                    <a class="venobox wsus__single_portfolio gallery_item" data-gall="gallery01"
-                                        href="images/event2_4.jpg">
-                                        <img src="images/event2_4.jpg" alt="instagram" class="img-fluid w-100">
-                                        <div class="wsus__portfolio_overlay">
-                                            <span class="view"><i class="far fa-eye"></i></span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 event_gallery">
-                                    <a class="venobox wsus__single_portfolio gallery_item" data-gall="gallery01"
-                                        href="images/event2_5.jpg">
-                                        <img src="images/event2_5.jpg" alt="instagram" class="img-fluid w-100">
-                                        <div class="wsus__portfolio_overlay">
-                                            <span class="view"><i class="far fa-eye"></i></span>
-                                        </div>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="col-xl-6 col-sm-6">
+                                <a href="#"> <span><i class="far fa-angle-left"></i></span> Back to
+                                    cart</a>
+                            </div>
+                            <div class="col-xl-6 col-sm-6">
+                                <a href="#">Proceed to shipping <span><i class="far fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4">
-                    <div class="wsus__details_sidebar event_sidebar" id="sticky_sidebar">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="sidebar_info mb_25">
-                                    <h3 class="details_subheading mt-0">Event Info:</h3>
-                                    <p><span><i class="fal fa-calendar-alt"></i> date :</span> 20 mar 2022</p>
-                                    <p><span><i class="fal fa-clock"></i> time :</span> 20 mar 2022</p>
-                                    <p><span><i class="fal fa-calendar-alt"></i> seats :</span> 200 people</p>
-                                    <a class="cart" href="#">add to cart</a>
-                                    <a href="checkout.html">buy tickets</a>
+                    <div class="wsus__chechout_item" id="sticky_sidebar">
+                        <h3>total item <span>03</span></h3>
+                        <ul>
+                            <li>
+                                <img src="images/event2_1.jpg" alt="pay item" class="img-fluid w-100">
+                                <div class="wsus__chechout_item_text">
+                                    <a href="#">DirList - Complete Business Directory And Listing Script</a>
+                                    <p>$55.00</p>
                                 </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="sidebar_info mb-0">
-                                    <h3 class="details_subheading mt-0">location:</h3>
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.37044418875!2d90.3897908146596!3d23.876479289865856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c415dabf6e4d%3A0xb9fa0b309dbe4785!2sUttara%20Sector%2011%20Park!5e0!3m2!1sen!2sbd!4v1650001652359!5m2!1sen!2sbd"
-                                        width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </li>
+                            <li>
+                                <img src="images/event2_2.jpg" alt="pay item" class="img-fluid w-100">
+                                <div class="wsus__chechout_item_text">
+                                    <a href="#">DirList - Complete Business Directory And Listing Script</a>
+                                    <p>$55.00</p>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                            <li>
+                                <img src="images/event2_3.jpg" alt="pay item" class="img-fluid w-100">
+                                <div class="wsus__chechout_item_text">
+                                    <a href="#">DirList - Complete Business Directory And Listing Script</a>
+                                    <p>$55.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/event2_4.jpg" alt="pay item" class="img-fluid w-100">
+                                <div class="wsus__chechout_item_text">
+                                    <a href="#">DirList - Complete Business Directory And Listing Script</a>
+                                    <p>$55.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/event2_5.jpg" alt="pay item" class="img-fluid w-100">
+                                <div class="wsus__chechout_item_text">
+                                    <a href="#">DirList - Complete Business Directory And Listing Script</a>
+                                    <p>$55.00</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <h4>you pay <span>$520</span></h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- =========EVENT DETAILS END=========== -->
+    <!-- =========CHECKOUT PAGE END=========== -->
 
 
     <!-- ========SUBSCRIBE START=========== -->
@@ -319,7 +339,6 @@
     <script src="js/simplyCountdown.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/sticky_sidebar.js"></script>
-    <script src="js/venobox.min.js"></script>
 
 
     <!--main/custom js-->
