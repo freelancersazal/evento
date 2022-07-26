@@ -211,12 +211,8 @@ $(function () {
     });
 
 
-
-
-
-
-
-
+    //=====counter.js=====   
+    $('.counter').countUp();
 
 
 

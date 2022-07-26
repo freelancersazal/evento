@@ -461,11 +461,152 @@ button {
 
 
 
-
-
 /* mini cart start */
+.wsus__mini_cart .offcanvas-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.wsus__mini_cart ul {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.wsus__mini_cart ul::-webkit-scrollbar {
+    scrollbar-width: thin !important;
+    background: #ddd;
+    height: 8px;
+    width: 8px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.wsus__mini_cart ul::-webkit-scrollbar-thumb {
+    background: #d33;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.wsus__mini_cart ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wsus__mini_cart ul li .images {
+    width: 70px;
+    height: 70px;
+    box-shadow: rgb(99 99 99 / 15%) 0px 0px 2px 1px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.wsus__mini_cart ul li .images a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd3333d4;
+    top: 0;
+    left: 0;
+    color: var(--colorWhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    opacity: 0;
+    transform: scale(.5);
+    transition: all linear .3s;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__mini_cart ul li .images:hover a {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.wsus__mini_cart ul li .text {
+    width: 75%;
+}
+
+.wsus__mini_cart ul li .text a {
+    color: var(--colorBlack);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__mini_cart ul li .text a:hover {
+    color: var(--colorPrimary);
+}
+
+.wsus__mini_cart ul li .text p {
+    color: var(--colorSecondary);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.wsus__mini_cart ul li .text p del {
+    color: var(--colorPrimary);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.wsus__mini_cart .button_area {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.wsus__mini_cart .button_area a {
+    padding: 13px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    display: inline-block;
+    border-radius: 3px;
+    transition: all linear .3s;
+}
+
+.wsus__mini_cart .button_area a:hover {
+    background: #ab0707;
+}
 
 /* mini cart end */
+
 
 
 
@@ -1472,7 +1613,7 @@ button {
 .wsus__blog .nextArrow,
 .wsus__blog .prevArrow {
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
     right: 25px;
     color: #fff;
     width: auto;
@@ -2731,7 +2872,7 @@ button {
     margin-top: 10px;
 }
 
-.wsus__checkout_form .form-check input {
+.form-check input {
     width: 15px !important;
     height: 15px !important;
     padding: 0;
@@ -2739,21 +2880,22 @@ button {
     border: 1px solid var(--colorPrimary);
 }
 
-.wsus__checkout_form .form-check-input:checked,
-.wsus__login_form .form-check-input:checked {
+.form-check-input:checked,
+.form-check-input:checked {
     background-color: var(--colorPrimary);
     border-color: var(--colorPrimary);
 }
 
-.wsus__checkout_form .form-check-input:focus,
-.wsus__login_form .form-check-input:focus {
+.form-check-input:focus,
+.form-check-input:focus {
     border-color: var(--colorPrimary);
     box-shadow: none;
 }
 
-.wsus__checkout_form .form-check label,
-.wsus__login_form .form-check label {
+.form-check label,
+.form-check label {
     font-size: 14px;
+    cursor: pointer;
 }
 
 .wsus__checkout_form a {
@@ -3105,8 +3247,6 @@ button {
 
 
 /* ========CART VIEW START========== */
-.wsus__cart_view {}
-
 .wsus__cart_view_area {
     box-shadow: rgb(99 99 99 / 15%) 0px 0px 2px 1px;
     padding: 25px;
@@ -3357,9 +3497,376 @@ button {
 
 
 
-/* ========START========== */
-/* ========END============ */
+/* ========SIGNUP START========== */
+.wsus__signin_signup {
+    box-shadow: rgb(99 99 99 / 15%) 0px 0px 2px 1px;
+    background: var(--colorWhite);
+    overflow: hidden;
+    border-radius: 10px;
+}
 
+.wsus__signin_signup_img {
+    position: relative;
+    height: 350px;
+}
+
+.wsus__signin_signup_img .logo {
+    position: absolute;
+    top: 20px;
+    left: -70px;
+    background: #c6d8ff;
+    padding: 12px 25px 10px 100px;
+    border-radius: 50px;
+}
+
+.wsus__signin_signup_img .logo img {
+    width: 70px !important;
+}
+
+.wsus__signin_signup_img .create_account {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--colorSecondary);
+    padding: 10px 20px;
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 3px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__signin_signup_img .create_account:hover {
+    background: #087daa;
+}
+
+.login_form {
+    padding: 50px;
+}
+
+.login_form h4 {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--colorSecondary);
+    margin-bottom: 20px;
+}
+
+.wsus__login_input {
+    background: #e2eaf9;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.wsus__login_input input {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+}
+
+.wsus__login_input span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--colorSecondary);
+    color: var(--colorWhite);
+    text-align: center;
+    line-height: 50px;
+}
+
+.wsus__login_forget a {
+    color: var(--colorPrimary);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.login_form button {
+    padding: 10px 30px;
+    text-transform: capitalize;
+    font-size: 16px;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    border-radius: 3px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.login_form button:hover {
+    background: #b70c0c;
+}
+
+.login_form .or {
+    color: var(--colorPrimary);
+    font-weight: 400;
+    margin: 13px 0px 8px 0px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.login_form .or::after {
+    position: absolute;
+    content: "";
+    background: var(--colorPrimary);
+    width: 75%;
+    height: 1px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.login_form ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.login_form ul li a {
+    background: #ddd;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: var(--colorWhite);
+    margin-right: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.login_form ul li a i {
+    margin-right: 5px;
+}
+
+/* ========SIGNUP END============ */
+
+
+
+/* ========ABOUT US START========== */
+.about_single_img {
+    height: 440px;
+    position: relative;
+}
+
+.about_single_img .img_1 {
+    width: 400px !important;
+    height: 400px !important;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 2;
+}
+
+.about_single_img .img_2 {
+    width: 250px !important;
+    height: 250px !important;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    z-index: 3;
+}
+
+.about_single_img::after {
+    position: absolute;
+    content: "";
+    background: url(../images/about_2_ahape.png_2.png);
+    width: 150px;
+    height: 150px;
+    top: -25px;
+    left: -24px;
+    z-index: -1;
+    animation: rotate_animi 0.7s infinite alternate;
+    -webkit-animation: rotate_animi 0.7s infinite alternate;
+}
+
+@keyframes rotate_animi {
+    to {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    from {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
+}
+
+.about_single_img::before {
+    position: absolute;
+    content: "";
+    background: var(--colorPrimary);
+    width: 40px;
+    height: 200px;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.wsus__about_text {
+    box-shadow: rgb(99 99 99 / 15%) 0px 0px 2px 1px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wsus__about_text h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wsus__about_text p {
+    margin-top: 20px;
+}
+
+.wsus__counter {
+    background: #161735;
+}
+
+.wsus__single_counter {
+    border-right: 3px solid #E5E5E5;
+    text-align: center;
+}
+
+.wsus__single_counter span {
+    font-size: 64px;
+    color: var(--colorPrimary);
+    font-weight: 800;
+    text-align: center;
+    display: inline-block;
+    padding-right: 30px;
+    position: relative;
+}
+
+.wsus__single_counter span::after {
+    content: "\f067" !important;
+    color: var(--colorPrimary);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 30px;
+    position: absolute;
+    top: 27px;
+    right: 0px;
+}
+
+.wsus__single_counter P {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--colorWhite);
+    text-align: center;
+}
+
+/* ========ABOUT US END============ */
+
+
+/* ========CONTACT START========== */
+.wsus__contact_area {
+    box-shadow: rgb(99 99 99 / 15%) 0px 0px 2px 1px;
+    background: var(--colorWhite);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.wsus__contact_area h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+}
+
+.wsus__contact_area p {
+    margin-bottom: 30px;
+}
+
+.wsus__single_input {
+    position: relative;
+}
+
+.wsus__single_input input,
+.wsus__single_input textarea {
+    border: 1px solid #e8e8e8;
+    margin-bottom: 25px;
+    color: var(--colorBlack);
+    border-radius: 3px;
+    padding: 13px 20px;
+    background: #F7F7FA;
+}
+
+.wsus__contact_area .nice-select {
+    height: 52px;
+    line-height: 52px;
+}
+
+.wsus__single_input span {
+    top: 15px;
+    right: 20px;
+    color: var(--colorPrimary);
+    left: auto;
+    position: absolute;
+}
+
+.wsus__contact_area button {
+    background: var(--colorPrimary);
+    padding: 13px 20px;
+    border-radius: 3px;
+    color: var(--colorWhite);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__contact_area button:hover {
+    background: #a30404;
+}
+
+.wsus__contact_area button i {
+    margin-left: 10px;
+}
+
+.wsus__contact_map {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wsus__contact_map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========CONTACT END============ */
 
 
 
