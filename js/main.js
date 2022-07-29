@@ -102,7 +102,7 @@ $(function () {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 }
             },
             {
@@ -134,11 +134,10 @@ $(function () {
     });
 
 
-    //======NICE SELECT=========
-    $('#select_js').niceSelect();
-    $('#select_js2').niceSelect();
-    $('#select_js3').niceSelect();
-
+    //======SELECT-2 JS=========
+    $(document).ready(function () {
+        $('.select_2').select2();
+    });
 
 
     //=====STICKY SIDEBAR===== 
@@ -147,10 +146,8 @@ $(function () {
     })
 
 
-
     //=== main.js ===
     $('.venobox').venobox();
-
 
 
     //*=======EVENT DETAILS SLIDER====== 
@@ -213,6 +210,26 @@ $(function () {
 
     //=====counter.js=====   
     $('.counter').countUp();
+
+
+
+    //=====daypiker.js=====
+    $(function () {
+        var $startDate = $('.start-date');
+        var $endDate = $('.end-date');
+
+        $startDate.datepicker({
+            autoHide: true,
+        });
+        $endDate.datepicker({
+            autoHide: true,
+            startDate: $startDate.datepicker('getDate'),
+        });
+
+        $startDate.on('change', function () {
+            $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+        });
+    });
 
 
 

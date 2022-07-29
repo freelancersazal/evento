@@ -9,10 +9,12 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
 
+    <link rel="stylesheet" href="css/spacing.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -33,38 +35,39 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">events</a>
+                        <a class="nav-link" href="event.html">events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Speakers</a>
+                        <a class="nav-link" href="speakers.html">Speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">blogs</a>
+                        <a class="nav-link" href="blog.html">blogs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">pages <i class="far fa-angle-down"></i></a>
                         <ul class="wsus__droap_menu">
-                            <li><a href="#">Event Schedule</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">FAQ’s</a></li>
-                            <li><a href="#">Cart View</a></li>
-                            <li><a href="#">Check Out</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Sponsors</a></li>
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="schedule.html">Event Schedule</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="faq.html">FAQ’s</a></li>
+                            <li><a href="cart_view.html">Cart View</a></li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="payment.html">payment</a></li>
+                            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                            <li><a href="terms_condition.html">Terms & Condition</a></li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <li><a href="sign_in.html">Sign In</a></li>
+                            <li><a href="sign_up.html">Sign Up</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">about</a>
+                        <a class="nav-link" href="about_us.html">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
+                        <a class="nav-link" href="contact_us.html">contact</a>
                     </li>
                 </ul>
                 <ul class="Right_menu d-flex flex-wrap">
@@ -77,22 +80,100 @@
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
                     </li>
-                    <li><a class="event_btn" href="#">add event</a></li>
+                    <li><a class="event_btn" href="add_event.html">add event</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Total Items (07)</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            ...
+    <!-- mini cart start -->
+    <div class="wsus__mini_cart">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Total Items - 07</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="images/event2_1.jpg" alt="event" class="img-fluid">
+                            <a href="#"><i class="far fa-times"></i></a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Learn Blockchain with Python - Kick-Start Your Career Today</a>
+                            <p>$95.00 <del>$120.00</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="images">
+                            <img src="images/event2_2.jpg" alt="event" class="img-fluid">
+                            <a href="#"><i class="far fa-times"></i></a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Learn Blockchain with Python - Kick-Start Your Career Today</a>
+                            <p>$95.00 <del>$120.00</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="images">
+                            <img src="images/event2_3.jpg" alt="event" class="img-fluid">
+                            <a href="#"><i class="far fa-times"></i></a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Learn Blockchain with Python - Kick-Start Your Career Today</a>
+                            <p>$95.00 <del>$120.00</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="images">
+                            <img src="images/event2_4.jpg" alt="event" class="img-fluid">
+                            <a href="#"><i class="far fa-times"></i></a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Learn Blockchain with Python - Kick-Start Your Career Today</a>
+                            <p>$95.00 <del>$120.00</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="images">
+                            <img src="images/event2_5.jpg" alt="event" class="img-fluid">
+                            <a href="#"><i class="far fa-times"></i></a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Learn Blockchain with Python - Kick-Start Your Career Today</a>
+                            <p>$95.00 <del>$120.00</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="images">
+                            <img src="images/event2_6.jpg" alt="event" class="img-fluid">
+                            <a href="#"><i class="far fa-times"></i></a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Learn Blockchain with Python - Kick-Start Your Career Today</a>
+                            <p>$95.00 <del>$120.00</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="images">
+                            <img src="images/event2_1.jpg" alt="event" class="img-fluid">
+                            <a href="#"><i class="far fa-times"></i></a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Learn Blockchain with Python - Kick-Start Your Career Today</a>
+                            <p>$95.00 <del>$120.00</del></p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="button_area">
+                    <a href="cart_view.html">cart view</a>
+                    <a href="checkout.html">check out</a>
+                </div>
+            </div>
         </div>
     </div>
-
+    <!-- mini cart end -->
     <!-- =========MENU END=========== -->
 
 
@@ -144,7 +225,7 @@
                             <div class="col-xl-6">
                                 <label>Country</label>
                                 <div class="wsus__select_area">
-                                    <select id="select_js">
+                                    <select class="select_2">
                                         <option value="">Select country </option>
                                         <option value="">Bangladesh</option>
                                         <option value="">Japan</option>
@@ -157,7 +238,7 @@
                             <div class="col-xl-6">
                                 <label>City</label>
                                 <div class="wsus__select_area">
-                                    <select id="select_js2">
+                                    <select class="select_2">
                                         <option value="">Select city </option>
                                         <option value="">Bangladesh</option>
                                         <option value="">Japan</option>
@@ -249,13 +330,13 @@
     <section class="wsus__subscribe mt_100 xs_mt_75">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-5">
                     <div class="wsus__subscribe_text">
                         <h4>subscribe to our</h4>
                         <h2>newsletter</h2>
                     </div>
                 </div>
-                <div class="col-xl-8">
+                <div class="col-xl-8 col-md-7">
                     <div class="wsus__subscribe_form">
                         <form>
                             <input type="text" placeholder="Subscribe">
@@ -270,10 +351,10 @@
 
 
     <!-- ========FOOTER START=========== -->
-    <section class="wsus__footer pt_95 xs_pt_65 pb_95 xs_pb_65">
+    <section class="wsus__footer pt_95 xs_pt_65 pb_95 xs_pb_15">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-8 col-lg-4">
                     <div class="wsus__footer_content">
                         <a class="footer_logo" href="index.html">
                             <img src="images/logo.png" alt="evento" class="img-fluid">
@@ -289,7 +370,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-4 col-lg-2">
                     <div class="wsus__footer_content">
                         <h3>information</h3>
                         <ul class="link">
@@ -301,7 +382,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-4 order-md-4 order-lg-3 col-lg-2">
                     <div class="wsus__footer_content">
                         <h3>API</h3>
                         <ul class="link">
@@ -313,7 +394,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-8 order-md-3 order-lg-4 col-lg-4">
                     <div class="wsus__footer_content footer_contact">
                         <h3>contact</h3>
                         <p><i class="fal fa-phone-alt"></i> +1347-430-9510</p>
@@ -335,11 +416,22 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!--font-awesome js-->
     <script src="js/Font-Awesome.js"></script>
-    <script src="js/slick.min.js"></script>
+    <!--datepicker js-->
+    <script src="js/datepicker.js"></script>
+    <!--countup js-->
+    <script src="js/jquery.countup.min.js"></script>
+    <!--waypoints js-->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!--select2 js-->
+    <script src="js/select2.min.js"></script>
+    <!--simplyCountdown js-->
     <script src="js/simplyCountdown.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
+    <!--slick js-->
+    <script src="js/slick.min.js"></script>
+    <!--sticky_sidebar js-->
     <script src="js/sticky_sidebar.js"></script>
-
+    <!--venobox js-->
+    <script src="js/venobox.min.js"></script>
 
     <!--main/custom js-->
     <script src=" js/main.js"></script>
