@@ -313,12 +313,14 @@ button {
     -o-transition: all linear .3s;
 }
 
-.wsus__droap_menu li a:hover {
+.wsus__droap_menu li a:hover,
+.wsus__droap_menu li .active {
     padding-left: 10px;
     color: var(--colorPrimary) !important;
 }
 
-.wsus__droap_menu li a:hover::after {
+.wsus__droap_menu li a:hover::after,
+.wsus__droap_menu li .active::after {
     width: 7px;
     opacity: 1;
 }
@@ -408,6 +410,7 @@ button {
     border-radius: 30px;
     background: var(--colorPrimary);
     color: var(--colorWhite);
+    text-align: center;
 }
 
 .Right_menu li:hover .wsus__menu_search {
@@ -884,13 +887,13 @@ button {
 }
 
 .wsus__single_event_2_img .event_countdown .simply-amount {
-    background: #000000bd;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    margin: 0px 3px;
-    font-size: 20px;
+    background: #00aceed1;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    line-height: 50px;
+    margin: 0px 3px;
+    font-size: 18px;
 }
 
 .wsus__single_event_2_img .event_countdown {
@@ -985,23 +988,67 @@ button {
     background-size: cover !important;
 }
 
-.wsus__monetize_text h5 {
-    color: var(--colorSecondary);
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
 .wsus__monetize_text h2 {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 600;
+    position: relative;
+    padding-left: 75px;
+    color: var(--colorSecondary);
 }
 
 .wsus__monetize_text p {
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
-.wsus__monetize_text h4 {
-    margin-top: 18px;
+.wsus__monetize_text h2::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background: var(--colorSecondary);
+    top: 12px;
+    left: 0px;
+}
+
+.wsus__monetize_text h2::before {
+    position: absolute;
+    content: "*";
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 30px;
+    color: var(--colorSecondary);
+    border: 2px solid var(--colorSecondary);
+    border-radius: 50%;
+    background: var(--colorWhite);
+    top: -3px;
+    left: 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+    animation: rotate linear 5s infinite;
+    -webkit-animation: rotate linear 5s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
 }
 
 /* ========MONETIZE EVENT END============ */
@@ -1155,7 +1202,7 @@ button {
     background: var(--colorWhite);
     border-radius: 5px;
     margin-top: 25px;
-    BOX-SHADOW: rgb(99 99 99 / 25%) 0px 0px 5px 1px;
+    box-shadow: rgb(99 99 99 / 25%) 0px 0px 5px 1px;
 }
 
 .wsus__single_speaker::after {
@@ -1221,11 +1268,13 @@ button {
     font-size: 20px;
     text-transform: capitalize;
     color: var(--colorWhite);
+    text-align: center;
 }
 
 .wsus__single_speaker_text p {
     text-transform: capitalize;
     color: var(--colorWhite);
+    text-align: center;
 }
 
 .wsus__single_speaker ul {
@@ -1351,6 +1400,7 @@ button {
 }
 
 .wsus__schedule_item .accordion-item {
+    margin-top: 25px;
     box-shadow: rgb(99 99 99 / 15%) 0px 0px 2px 1px;
     background: #fff;
     border-radius: 5px;
@@ -1358,7 +1408,6 @@ button {
 
 .wsus__schedule_item button {
     flex-wrap: wrap;
-    margin-top: 25px;
     padding: 10px !important;
     border: none !important;
     border-radius: 5px !important;
@@ -1518,6 +1567,7 @@ button {
     font-weight: 600;
     color: var(--colorWhite);
     margin: 30px 0px 5px 0px;
+    text-align: center;
 }
 
 .wsus__single_testimonial_text h6 {
@@ -1525,16 +1575,19 @@ button {
     font-weight: 400;
     text-transform: capitalize;
     color: var(--colorSecondary);
+    text-align: center;
 }
 
 .wsus__single_testimonial_text span {
     color: #FFDF00;
     margin: 15px 0px;
     display: block;
+    text-align: center;
 }
 
 .wsus__single_testimonial_text p {
     color: var(--colorWhite);
+    text-align: center;
 }
 
 .wsus__testimonial .slick-dots {
@@ -1656,8 +1709,9 @@ button {
     padding: 4px 15px 5px 15px;
     display: inline-block;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: -15px;
+    right: 25px;
+    border-radius: 3px;
 }
 
 .wsus__single_blog_img .category.yellow {
@@ -1702,7 +1756,7 @@ button {
 
 .wsus__single_blog_text ul li i {
     color: var(--colorPrimary);
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .wsus__single_blog_text .title {
@@ -1922,6 +1976,7 @@ button {
     text-transform: capitalize;
     font-weight: 600;
     margin-bottom: 15px;
+    font-size: 45px;
 }
 
 .wsus__breadcrumb ul li,
@@ -1931,6 +1986,7 @@ button {
     font-size: 14px;
     font-weight: 600;
     position: relative;
+    display: inline-block;
 }
 
 .wsus__breadcrumb ul li a {
@@ -2006,6 +2062,7 @@ button {
     width: 100%;
     text-transform: capitalize;
     font-size: 16px;
+    text-align: center;
     font-weight: 600;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -2274,10 +2331,10 @@ button {
     box-shadow: rgb(99 99 99 / 15%) 0px 0px 2px 1px;
 }
 
-
 .wsus__blog_details_img {
     border-radius: 5px;
     overflow: hidden;
+    height: 400px;
 }
 
 .wsus__blog_details_content .details_title {
@@ -2448,6 +2505,7 @@ button {
 
 .wsus__comment_text p {
     font-size: 15px;
+    margin-bottom: 0;
 }
 
 .wsus__comment_text a {
@@ -2537,7 +2595,7 @@ button {
     right: 0;
     height: 100%;
     border-radius: 0;
-    padding: 0px 25px;
+    padding: 0px 20px;
     font-size: 18px;
     background: var(--colorPrimary);
     color: var(--colorWhite);
@@ -2626,6 +2684,8 @@ button {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    display: block;
+    width: 100%;
     height: 250px;
     margin-top: 25px;
     box-shadow: rgb(99 99 99 / 15%) 0px 0px 2px 1px;
@@ -2674,6 +2734,7 @@ button {
     font-size: 20px;
     margin-bottom: 10px;
     color: var(--colorWhite);
+    text-align: center;
     transition: all linear .3s;
     -webkit-transition: all linear .3s ease;
     -moz-transition: all linear .3s ease;
@@ -2703,7 +2764,8 @@ button {
 }
 
 .wsus__pricing_body {
-    padding: 37px 0px 55px 0px;
+    padding: 37px 0px 35px 0px;
+    text-align: center;
 }
 
 .wsus__pricing_body ul {
@@ -2714,6 +2776,7 @@ button {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
     color: var(--colorBlack);
     transition: all linear .3s;
     -webkit-transition: all linear .3s ease;
@@ -2781,6 +2844,7 @@ button {
     background: none !important;
     font-size: 16px;
     font-weight: 500;
+    padding-right: 55px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -3035,6 +3099,36 @@ button {
     outline: none;
 }
 
+.wsus__checkout_form .wsus__select_area {
+    margin-bottom: 20px;
+}
+
+.wsus__checkout_form .accordion-item {
+    border: 0;
+}
+
+.wsus__checkout_form .accordion-button {
+    background: #fff !important;
+    border: none;
+}
+
+.wsus__checkout_form .accordion-button:focus {
+    box-shadow: none;
+}
+
+.wsus__checkout_form .accordion-button:not(.collapsed) {
+    color: var(--colorPrimary);
+    box-shadow: none;
+}
+
+.wsus__checkout_form .accordion-button::after {
+    display: none;
+}
+
+.wsus__checkout_form .accordion-button label {
+    margin: 4px 0px 0px 0px;
+}
+
 /* ========CHECKOUT END============ */
 
 
@@ -3047,6 +3141,7 @@ button {
     color: var(--colorWhite);
     text-transform: capitalize;
     font-size: 15px;
+    text-align: center;
 }
 
 .wsus__payment_menu {
@@ -3154,6 +3249,7 @@ button {
     border-radius: 5px;
     padding: 10px 0px;
     margin-top: 15px;
+    text-align: center;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -3218,6 +3314,7 @@ button {
     margin-bottom: 20px;
     resize: none;
     border: 1px solid #ddd;
+    background: #F7F7FA;
 }
 
 .wsus__pay_info_area .nice-select {
@@ -3304,7 +3401,7 @@ button {
 .wsus__cart_view_area table .title h4 {
     font-size: 16px;
     color: var(--colorBlack);
-    text-align: center;
+    font-weight: 400;
 }
 
 .wsus__cart_view_area table .title p {
@@ -3437,6 +3534,7 @@ button {
 
 .wsus__privacy_policy_text p {
     margin-bottom: 20px;
+    color: var(--colorBlack);
 }
 
 .wsus__privacy_policy_text ul {
@@ -3447,8 +3545,8 @@ button {
     margin-top: 15px;
     padding-left: 25px;
     position: relative;
-    color: var(--paraColor);
     font-weight: 300;
+    color: var(--colorBlack);
 }
 
 .wsus__privacy_policy_text ul li::after {
@@ -3802,6 +3900,7 @@ button {
     font-weight: 600;
     text-transform: capitalize;
     color: var(--colorBlack);
+    margin-bottom: 10px;
 }
 
 .wsus__contact_area p {
@@ -3820,6 +3919,11 @@ button {
     border-radius: 3px;
     padding: 13px 20px;
     background: #F7F7FA;
+    padding-right: 40px;
+}
+
+.wsus__contact_area .wsus__select_area {
+    margin-bottom: 25px;
 }
 
 .wsus__contact_area .nice-select {
@@ -3866,6 +3970,14 @@ button {
     height: 100%;
 }
 
+.wsus__contact_area .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 20px;
+}
+
+.wsus__contact_area .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 15px;
+}
+
 /* ========CONTACT END============ */
 
 
@@ -3894,12 +4006,18 @@ button {
     border: 1px solid #E4E7E9;
 }
 
+.wsus__event_input .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 9px;
+    right: 10px;
+}
+
+
 .wsus__event_input p {
     position: absolute;
     width: 50px;
     height: 102%;
     top: -1%;
-    left: 0;
+    left: -1px;
     display: block;
     background: #c4ebf9;
     text-align: center;
@@ -3921,10 +4039,16 @@ button {
 .wsus__event_input textarea {
     padding-left: 65px;
     border: none;
+    background: #F7F7FA;
 }
 
+/* .wsus__event_input textarea {
+    margin-bottom: -6px;
+    overflow: hidden;
+} */
+
 .wsus__event_input.textarea p {
-    height: 101%;
+    height: 101.5%;
     line-height: 195px;
 }
 
@@ -3964,3 +4088,113 @@ button {
 }
 
 /* ========ADD EVENT END============ */
+
+
+/* ========SPEAKERS DETAILS START============ */
+.wsus__speaker_details_area {
+    box-shadow: rgb(99 99 99 / 25%) 0px 0px 5px 1px;
+    border-radius: 10px;
+    background: var(--colorWhite);
+    padding: 20px;
+}
+
+.wsus__speaker_details_img {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 50px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wsus__speaker_details_img img {
+    width: 200px !important;
+    height: 200px !important;
+    border: 8px solid var(--colorSecondary);
+    box-shadow: rgb(99 99 99 / 25%) 0px 0px 5px 1px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wsus__speaker_details_img ul {}
+
+.wsus__speaker_details_img ul li {}
+
+.wsus__speaker_details_img ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 36px;
+    background: var(--colorPrimary);
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 3px;
+    box-shadow: rgb(99 99 99 / 25%) 0px 0px 5px 1px;
+    color: var(--colorWhite);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__speaker_details_img ul li a:hover {
+    color: var(--colorPrimary);
+    background: var(--colorWhite);
+}
+
+.wsus__speaker_details_text h4 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wsus__speaker_details_text p {
+    margin-top: 25px;
+    color: var(--colorBlack);
+}
+
+.wsus__speaker_details_text ul {
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.wsus__speaker_details_text ul li {
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    padding: 15px 20px;
+}
+
+.wsus__speaker_details_text ul li:last-child {
+    border: 0;
+}
+
+.wsus__speaker_details_text ul li span {
+    color: var(--colorBlack);
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.wsus__speaker_details_text ul li p {
+    margin: 0;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.wsus__speaker_details h5 {
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* ========SPEAKERS DETAILS END============== */

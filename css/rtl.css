@@ -1,0 +1,572 @@
+* {
+    direction: rtl;
+    text-align: right;
+}
+
+.slick-list {
+    direction: ltr;
+}
+
+
+/* home page start */
+.wsus__droap_menu {
+    left: auto;
+    right: 0;
+}
+
+.wsus__droap_menu li a::after {
+    left: auto;
+    right: 0;
+}
+
+.wsus__droap_menu li a:hover {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.offcanvas-end {
+    right: auto;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+}
+
+.wsus__mini_cart ul li .images {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.wsus__mini_cart ul li .text p del {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+
+.Right_menu .wsus__menu_search {
+    right: auto;
+    left: 5px;
+}
+
+.Right_menu .wsus__menu_search button {
+    right: auto;
+    left: 2px;
+}
+
+.common_btn::after {
+    left: auto;
+    right: 1px;
+}
+
+.common_btn:hover::after {
+    left: auto;
+    right: -1%;
+}
+
+.wsus__single_event_img .date {
+    left: auto;
+    right: 20px;
+}
+
+.event_countdown {
+    right: auto;
+    left: 20px;
+}
+
+.wsus__single_event_2_text .price {
+    right: auto;
+    left: 20px;
+}
+
+.wsus__single_event_2_img .date {
+    left: auto;
+    right: 0;
+    padding: 6px 0px 6px 15px;
+}
+
+.wsus__single_event_2_img .date b {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.wsus__monetize_event .rtl_align {
+    margin-left: 0 !important;
+    margin-right: auto;
+}
+
+.wsus__single_speaker ul {
+    right: auto;
+    left: 20px;
+}
+
+.wsus__single_speaker_text::after {
+    transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+}
+
+.wsus__single_speaker_text::before {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.wsus__achedule_date .nav-pills button h4,
+.wsus__achedule_date .nav-pills button p {
+    text-align: center;
+}
+
+.wsus__schedule_item button img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.wsus__single_blog_text ul li {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.wsus__single_blog_img .category {
+    right: auto;
+    left: 25px;
+}
+
+.wsus__single_blog_text ul li i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.wsus__subscribe::after {
+    right: auto;
+    left: 0;
+}
+
+.wsus__subscribe_form form button {
+    right: auto;
+    left: 5px;
+}
+
+.footer_contact p {
+    padding-left: 0;
+    padding-right: 40px;
+}
+
+.footer_contact p i {
+    margin-right: 0;
+    margin-left: 10px;
+    left: auto;
+    right: 0;
+}
+
+.Right_menu li .search_icon {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.Right_menu li .cart_icon span {
+    left: auto;
+    right: -7px;
+}
+
+/* home page end */
+
+/* about page start */
+.about_single_img .img_1 {
+    left: auto;
+    right: 40px;
+}
+
+.about_single_img::before {
+    left: auto;
+    right: 0;
+}
+
+.about_single_img::after {
+    left: auto;
+    right: -24px;
+}
+
+.about_single_img .img_2 {
+    right: auto;
+    left: 15px;
+}
+
+.wsus__single_counter span {
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+.wsus__single_counter span::after {
+    right: auto;
+    left: 0;
+}
+
+/* about page end */
+
+
+/* event page start */
+.wsus__event_input p {
+    left: auto;
+    right: -1px;
+}
+
+.wsus__event_input input,
+.wsus__event_input textarea {
+    padding-left: 0;
+    padding-right: 65px;
+}
+
+.wsus__event_input .select2-container {
+    padding-left: 0;
+    padding-right: 50px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: auto !important;
+    left: 15px;
+}
+
+.wsus__event_input p {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.wsus__contact_area .wsus__single_input input,
+.wsus__contact_area .wsus__single_input textarea {
+    padding-right: 20px;
+}
+
+/* event page end */
+
+
+/* blog details start */
+.wsus__blog_search form button {
+    right: auto;
+    left: 0;
+}
+
+.wsus__sidebar_blog img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.wsus__pagination ul li a i,
+.wsus__comment_text a i {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__comment_img {
+    float: right;
+}
+
+.wsus__comment_text {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+.wsus__breadcrumb ul li a {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+.wsus__breadcrumb ul li a::after {
+    right: auto;
+    left: 15px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus_blog_admin_date span {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+/* blog details end */
+
+
+.wsus__cart_view_area a i {
+    margin-left: 0;
+    margin-right: 10px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__chechout_item ul li .wsus__chechout_item_text {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.wsus__checkout_form .form-check {
+    display: flex;
+}
+
+.form-check label,
+.form-check label {
+    margin-right: 35px;
+}
+
+.form-check-input:checked,
+.form-check-input:checked {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__checkout_form a span {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__single_input span {
+    right: auto;
+    left: 20px;
+}
+
+.wsus__event_details_img .simply-countdown.simply-countdown-one {
+    left: auto;
+    right: 0;
+}
+
+.wsus__event_details_text ul li {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+.wsus__event_details_text ul li::after {
+    left: auto;
+    right: 0;
+}
+
+.wsus__faq_item .accordion-header::after {
+    right: auto;
+    left: 0;
+}
+
+.wsus__faq_item .accordion-button::after {
+    right: auto;
+    left: 16px;
+}
+
+.wsus__payment_area .form-check input {
+    float: right;
+}
+
+.wsus__pay_info_area .list_item li {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.wsus__pay_info_area .list_item li::after {
+    left: auto;
+    right: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__save_payment h6 i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.wsus__privacy_policy_text ul li {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+.wsus__privacy_policy_text ul li::after {
+    left: auto;
+    right: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__privacy_policy_text a i {
+    margin-left: 0;
+    margin-right: 10px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__signin_signup_img .logo {
+    left: auto;
+    right: -70px;
+    padding: 12px 100px 10px 25px;
+}
+
+.wsus__signin_signup_img .create_account {
+    right: auto;
+    left: 20px;
+}
+
+.login_form .form-check input {
+    float: right !important;
+}
+
+.login_form .or::after {
+    right: auto;
+    left: 0;
+}
+
+.wsus__blog .nextArrow {
+    right: auto;
+    left: 50px;
+}
+
+.wsus__blog .prevArrow {
+    right: auto;
+    left: 20px;
+}
+
+.wsus__single_counter {
+    border-right: 0;
+    border-left: 3px solid #E5E5E5;
+}
+
+.wsus__pagination ul li a {
+    margin-left: 0;
+}
+
+.wsus__faq_item .accordion-button {
+    padding-right: 1.5rem;
+    padding-left: 55px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+    .navbar-toggler {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .main_menu .navbar-brand {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .Right_menu .wsus__menu_search {
+        right: -100px;
+        left: auto;
+    }
+
+    .wsus__blog_slide_text ul li {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .wsus__droap_menu {
+        right: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .navbar-toggler {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .main_menu .navbar-brand {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .Right_menu .wsus__menu_search {
+        right: -100px;
+        left: auto;
+    }
+
+    .wsus__blog_slide_text ul li {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .wsus__single_counter {
+        border: none;
+    }
+
+    .wsus__droap_menu {
+        right: auto;
+    }
+}
+
+@media (max-width: 575.99px) {
+    .navbar-toggler {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .main_menu .navbar-brand {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .Right_menu .wsus__menu_search {
+        right: -60px;
+        left: auto;
+    }
+
+    .wsus__blog_slide_text ul li {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .wsus__single_blog_text ul li {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .wsus__single_counter {
+        border-left: 0;
+    }
+
+    .wsus__comment_text {
+        padding-right: 0;
+    }
+
+    .wsus__droap_menu {
+        right: auto;
+    }
+}

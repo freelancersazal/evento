@@ -11,8 +11,25 @@
     .wsus__schedule_item button .text h5 {
         font-size: 16px;
     }
-}
 
+    .about_single_img .img_1 {
+        width: 370px !important;
+        height: 370px !important;
+        left: 20px;
+    }
+
+    .about_single_img .img_2 {
+        right: 0;
+    }
+
+    .wsus__about_text h2 {
+        font-size: 26px;
+    }
+
+    .wsus__gallery .gallery_item {
+        height: 220px;
+    }
+}
 
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
@@ -49,8 +66,58 @@
         width: 65%;
     }
 
-}
+    .wsus__single_blog_img {
+        height: 220px;
+    }
 
+    /* home page end */
+
+
+    /* about page start */
+    .about_single_img .img_1 {
+        width: 90% !important;
+        height: 350px !important;
+        left: 0;
+    }
+
+    .about_single_img .img_2 {
+        right: 0;
+    }
+
+    .wsus__single_counter span {
+        font-size: 50px;
+    }
+
+    .wsus__single_counter span::after {
+        font-size: 25px;
+        top: 18px;
+    }
+
+    .wsus__single_counter P {
+        font-size: 18px;
+    }
+
+    .wsus__about_text h2 {
+        font-size: 22px;
+    }
+
+    /* about page end */
+
+    /* cart view start */
+    .wsus__cart_view_area table .images {
+        width: 130px;
+    }
+
+    /* cart view end */
+
+    .wsus__blog_details_content .details_title {
+        font-size: 25px;
+    }
+
+    .wsus__speaker_details_text.lg_mt {
+        margin-top: 25px;
+    }
+}
 
 
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -79,6 +146,7 @@
         background: var(--colorPrimary);
         color: var(--colorWhite);
         margin-right: 10px;
+        text-align: center;
     }
 
     .navbar-toggler:focus {
@@ -105,8 +173,8 @@
     }
 
     .wsus__droap_menu {
-        left: 50%;
-        transform: translateX(-50%);
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .wsus__droap_menu {
@@ -247,10 +315,111 @@
     }
 
     /* home page end */
+
+    /* about page start */
+    .wsus__breadcrumb_overlay {
+        padding: 175px 0px 100px 0px;
+    }
+
+    .wsus__single_counter span {
+        font-size: 40px;
+    }
+
+    .wsus__single_counter span::after {
+        font-size: 25px;
+        top: 12px;
+    }
+
+    .wsus__single_counter P {
+        font-size: 16px;
+    }
+
+    .wsus__about_text {
+        margin-top: 25px;
+    }
+
+    /* about page end */
+
+    .wsus__blog_details_content {
+        margin-bottom: 25px;
+    }
+
+    /* cart view start */
+    .wsus__cart_view_area table .images {
+        width: 130px;
+    }
+
+    .wsus__cart_view_area table .title {
+        width: 300px;
+    }
+
+    .wsus__cart_view_area table .qty {
+        width: 210px;
+    }
+
+    .wsus__cart_view_area table .price {
+        width: 110px;
+    }
+
+    .wsus__cart_view_area table .del {
+        width: 110px;
+    }
+
+    /* cart view end */
+
+
+    .wsus__checkout_form {
+        margin-bottom: 25px;
+    }
+
+    .sidebar_info {
+        margin-top: 25px;
+    }
+
+    .wsus__event_page .event_search .search_list li {
+        width: 49%;
+        margin: 2px 0px;
+    }
+
+    .wsus__gallery .gallery_item {
+        height: 220px;
+    }
+
+    .wsus__payment_menu,
+    .wsus__pay_info_area .tab-pane {
+        margin-bottom: 25px;
+    }
+
+    .wsus__pay_info_area #v-pills-tab {
+        flex-direction: unset !important;
+        justify-content: space-between;
+    }
+
+    .wsus__pay_info_area .nav-pills .nav-link {
+        width: 49%;
+    }
+
+    .wsus__payment_menu .nav-pills button:last-child {
+        margin-bottom: 10px;
+    }
+
+    .login_form .or::after {
+        width: 75%;
+    }
+
+    .wsus__breadcrumb h1 {
+        font-size: 35px;
+    }
+
+    .wsus__speaker_details_text h4,
+    .wsus__speaker_details h5 {
+        font-size: 20px;
+    }
+
+    .wsus__speaker_details_text {
+        margin-top: 25px;
+    }
 }
-
-
-
 
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -279,6 +448,7 @@
         background: var(--colorPrimary);
         color: var(--colorWhite);
         margin-right: 10px;
+        text-align: center;
     }
 
     .navbar-toggler:focus {
@@ -305,8 +475,8 @@
     }
 
     .wsus__droap_menu {
-        left: 50%;
-        transform: translateX(-50%);
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .wsus__droap_menu {
@@ -365,8 +535,8 @@
     }
 
     .wsus__categories li {
-        width: 25%;
-        height: 100px;
+        width: 33.33%;
+        height: 125px;
     }
 
     .wsus__single_speaker {
@@ -487,10 +657,176 @@
 
     /* home page end */
 
+    /* about page start */
+    .wsus__breadcrumb_overlay {
+        padding: 175px 0px 100px 0px;
+    }
+
+    .wsus__breadcrumb h1 {
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+
+    .about_single_img {
+        height: 400px;
+    }
+
+    .about_single_img .img_2 {
+        right: 0;
+    }
+
+    .wsus__about_text {
+        margin-top: 25px;
+    }
+
+    .wsus__about_text h2 {
+        font-size: 20px;
+    }
+
+    .wsus__single_counter {
+        border: 0;
+        margin-bottom: 20px;
+        padding-bottom: 25px;
+    }
+
+    .wsus__single_counter span {
+        font-size: 45px;
+    }
+
+    .wsus__single_counter span::after {
+        font-size: 25px;
+        top: 15px;
+    }
+
+    /* about page end */
+
+    /* blog details start */
+    .wsus__blog_details_content .details_title {
+        font-size: 25px;
+    }
+
+    .wsus__blog_details_content {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .blog_details_share ul li a {
+        margin-top: 5px;
+    }
+
+    .wsus__comment_text h6 span {
+        width: 100%;
+        margin: 8px 0px 15px 0px;
+    }
+
+    .wsus__comment_img {
+        width: 50px;
+    }
+
+    .wsus__comment_text {
+        width: 89%;
+    }
+
+    .wsus__blog_details_img {
+        height: 300px;
+    }
+
+    /* blog details end */
+
+    /* cart view start */
+    .wsus__cart_view_area table .images {
+        width: 130px;
+    }
+
+    .wsus__cart_view_area table .title {
+        width: 300px;
+    }
+
+    .wsus__cart_view_area table .qty {
+        width: 210px;
+    }
+
+    .wsus__cart_view_area table .price {
+        width: 110px;
+    }
+
+    .wsus__cart_view_area table .del {
+        width: 110px;
+    }
+
+    /* cart view end */
+
+    /* checkout start */
+    .wsus__checkout_form {
+        margin-bottom: 25px;
+    }
+
+    /* checkout end */
+
+    /* event details start */
+    .wsus__event_details_img {
+        height: 300px;
+    }
+
+    .sidebar_info {
+        margin-top: 25px;
+    }
+
+    /* event details end */
+
+    .wsus__event_page .event_search .search_list li {
+        width: 100%;
+        margin: 2px 0px;
+    }
+
+    .wsus__gallery .gallery_item {
+        height: 200px;
+    }
+
+    .wsus__event_page .event_search .search_list li {
+        width: 100%;
+        margin: 2px 0px;
+    }
+
+    .wsus__payment_menu,
+    .wsus__pay_info_area .tab-pane {
+        margin-bottom: 25px;
+    }
+
+    .wsus__pay_info_area #v-pills-tab {
+        flex-direction: unset !important;
+        justify-content: space-between;
+    }
+
+    .wsus__pay_info_area .nav-pills .nav-link {
+        width: 49%;
+    }
+
+    .wsus__payment_menu .nav-pills button:last-child {
+        margin-bottom: 10px;
+    }
+
+    .wsus__pricing_header {
+        padding: 35px 0px 95px 0px;
+    }
+
+    .login_form {
+        padding: 30px;
+    }
+
+    .login_form .or::after {
+        width: 75%;
+    }
+
+    .wsus__speaker_details_text h4,
+    .wsus__speaker_details h5 {
+        font-size: 20px;
+    }
+
+    .wsus__speaker_details_text {
+        margin-top: 25px;
+    }
 }
-
-
-
 
 
 @media (max-width: 575.99px) {
@@ -519,6 +855,7 @@
         background: var(--colorPrimary);
         color: var(--colorWhite);
         margin-right: 10px;
+        text-align: center;
     }
 
     .navbar-toggler:focus {
@@ -545,7 +882,7 @@
     }
 
     .wsus__droap_menu {
-        left: 50%;
+        left: 50% !important;
         transform: translateX(-50%);
     }
 
@@ -621,8 +958,12 @@
     }
 
     .wsus__categories li {
-        width: 25%;
-        height: 75px;
+        width: 50%;
+        height: 100px;
+    }
+
+    .wsus__categories li a h5 {
+        font-size: 12px;
     }
 
     .wsus__categories li a {
@@ -737,7 +1078,209 @@
         font-size: 16px;
     }
 
+    .wsus__single_speaker {
+        height: 350px;
+    }
+
     /* home page emd */
 
+    /* about page start */
+    .wsus__breadcrumb_overlay {
+        padding: 125px 0px 50px 0px;
+    }
+
+    .wsus__breadcrumb h1 {
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    .about_single_img .img_1 {
+        width: 100% !important;
+        height: 320px !important;
+        left: 0;
+    }
+
+    .about_single_img {
+        height: 400px;
+    }
+
+    .about_single_img .img_2 {
+        right: 0;
+    }
+
+    .wsus__about_text {
+        padding: 15px;
+        margin-top: 25px;
+    }
+
+    .wsus__about_text h2 {
+        font-size: 18px;
+    }
+
+    .wsus__single_counter {
+        border-right: 0;
+        border-bottom: 3px solid #E5E5E5;
+        margin-bottom: 20px;
+        padding-bottom: 25px;
+    }
+
+    /* about page end */
+
+    /* add event page start */
+    .wsus__add_event_area h4 {
+        font-size: 18px;
+    }
+
+    .wsus__add_event_area {
+        padding: 15px;
+    }
+
+    /* add event page end */
+
+    /* blog details start */
+    .wsus__blog_details_content .details_title {
+        font-size: 20px;
+    }
+
+    .wsus__blog_details_content {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .blog_details_share ul li a {
+        margin-top: 5px;
+    }
+
+    .wsus__comment_text h6 span {
+        width: 100%;
+        margin: 8px 0px 15px 0px;
+    }
+
+    .wsus__comment_img {
+        width: 50px;
+    }
+
+    .wsus__comment_text {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .wsus__sidebar_blog img {
+        width: 80px !important;
+        height: 74px !important;
+    }
+
+    .wsus__sidebar_item {
+        padding: 15px;
+    }
+
+    .wsus__sidebar_item h4 {
+        font-size: 18px;
+    }
+
+    .wsus__blog_details_img {
+        height: 200px;
+    }
+
+    /* blog details end */
+
+    /* cart view start */
+    .wsus__cart_view_area table .images {
+        width: 130px;
+    }
+
+    .wsus__cart_view_area table .title {
+        width: 300px;
+    }
+
+    .wsus__cart_view_area table .qty {
+        width: 210px;
+    }
+
+    .wsus__cart_view_area table .price {
+        width: 110px;
+    }
+
+    .wsus__cart_view_area table .del {
+        width: 110px;
+    }
+
+    /* cart view end */
+
+    /* checkout start */
+    .wsus__checkout_form a {
+        margin-top: 5px;
+    }
+
+    .wsus__checkout_form {
+        margin-bottom: 25px;
+    }
+
+    .wsus__chechout_item ul li .wsus__chechout_item_text {
+        padding-left: 10px;
+    }
+
+    /* checkout end */
+
+    /* contact us start */
+    .wsus__contact_area h2 {
+        font-size: 23px;
+    }
+
+    /* contact us end */
+
+    /* event details start */
+    .wsus__event_details_img {
+        height: 250px;
+    }
+
+    .wsus__event_details_img .simply-section.simply-days-section,
+    .wsus__event_details_img .simply-section.simply-hours-section,
+    .wsus__event_details_img .simply-section.simply-minutes-section,
+    .wsus__event_details_img .simply-section.simply-seconds-section {
+        width: 70px;
+    }
+
+    .sidebar_info {
+        margin-top: 25px;
+    }
+
+    /* event details end */
+
+    .wsus__event_page .event_search .search_list li {
+        width: 100%;
+        margin: 2px 0px;
+    }
+
+    .wsus__payment_menu,
+    .wsus__pay_info_area .tab-pane {
+        margin-bottom: 25px;
+    }
+
+    .wsus__privacy_policy_text {
+        padding: 15px;
+    }
+
+    .login_form {
+        padding: 15px;
+    }
+
+    .login_form .or::after {
+        width: 65%;
+    }
+
+    .wsus__blog_slide_text {
+        padding: 15px;
+    }
+
+    .wsus__speaker_details_text h4,
+    .wsus__speaker_details h5 {
+        font-size: 20px;
+    }
+
+    .wsus__speaker_details_text {
+        margin-top: 25px;
+    }
 
 }
