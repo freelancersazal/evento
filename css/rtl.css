@@ -466,14 +466,18 @@
 }
 
 
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+    .wsus__schedule_item button .text {
+        width: 77%;
+    }
+}
 
 
-
-
-
-
-
-
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    .wsus__schedule_item button .text {
+        width: 71%;
+    }
+}
 
 
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -499,6 +503,10 @@
 
     .wsus__droap_menu {
         right: auto;
+    }
+
+    .accordion-button .text {
+        width: 80%;
     }
 }
 
@@ -529,6 +537,10 @@
 
     .wsus__droap_menu {
         right: auto;
+    }
+
+    .accordion-button .text {
+        width: 75%;
     }
 }
 

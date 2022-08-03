@@ -1314,23 +1314,12 @@ button {
 
 
 
-
-
-
 /* ========SCHEDULE START========== */
-.wsus__schedule {
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: cover !important;
-}
+.wsus__schedule {}
 
-.wsus__achedule_date {
-    background: var(--colorSecondary);
-    box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px 0px;
-    border-radius: 10px;
-}
+.wsus__achedule_date {}
 
-.wsus__achedule_date .nav-pills {
+.wsus__achedule_date .nav-tabs {
     width: 100%;
     overflow: hidden;
     border-radius: 5px;
@@ -1338,31 +1327,35 @@ button {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    border: none;
 }
 
-.wsus__achedule_date .nav-pills button {
+.wsus__achedule_date .nav-tabs .nav-link {
     border-radius: 0;
     width: 25%;
     padding: 15px 0px;
+    text-align: center !important;
+    cursor: pointer;
+    border: none;
 }
 
-.wsus__achedule_date .nav-pills button.yellow {
+.wsus__achedule_date .nav-tabs .yellow {
     background: #fac400;
 }
 
-.wsus__achedule_date .nav-pills button.orange {
+.wsus__achedule_date .nav-tabs .orange {
     background: #ff8a00;
 }
 
-.wsus__achedule_date .nav-pills button.sky {
+.wsus__achedule_date .nav-tabs .sky {
     background: #00acee;
 }
 
-.wsus__achedule_date .nav-pills button.blue {
+.wsus__achedule_date .nav-tabs .blue {
     background: #8478fd;
 }
 
-.wsus__achedule_date .nav-pills button h4 {
+.wsus__achedule_date .nav-tabs .nav-link b {
     text-transform: uppercase;
     color: var(--colorWhite);
     font-size: 16px;
@@ -1372,9 +1365,11 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    display: block;
+    text-align: center;
 }
 
-.wsus__achedule_date .nav-pills button p {
+.wsus__achedule_date .nav-tabs .nav-link span {
     text-transform: capitalize;
     color: var(--colorWhite);
     transition: all linear .3s;
@@ -1382,21 +1377,35 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    display: block;
+    text-align: center;
 }
 
-.nav-pills .nav-link.active h4,
-.nav-pills .nav-link.active p {
+.wsus__achedule_date .nav-tabs .nav-link.active b,
+.wsus__achedule_date .nav-tabs .nav-link.active span {
     color: var(--colorBlack) !important;
 }
 
-.nav-pills .nav-link:hover h4,
-.nav-pills .nav-link:hover p {
+.wsus__achedule_date .nav-tabs .nav-link:hover b,
+.wsus__achedule_date .nav-tabs .nav-link:hover span {
     color: var(--colorBlack) !important;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .nav-link:hover {
-    background: none;
+.wsus__schedule_item button {
+    flex-wrap: wrap;
+    padding: 10px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    box-shadow: none !important;
+}
+
+.wsus__schedule_item button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.wsus__schedule_item button::after {
+    display: none;
 }
 
 .wsus__schedule_item .accordion-item {
@@ -1406,30 +1415,7 @@ button {
     border-radius: 5px;
 }
 
-.wsus__schedule_item button {
-    flex-wrap: wrap;
-    padding: 10px !important;
-    border: none !important;
-    border-radius: 5px !important;
-}
-
-.wsus__schedule_item button:focus {
-    border: none;
-    box-shadow: none;
-}
-
-.wsus__schedule_item button:not(.collapsed) {
-    color: var(--colorSecondary);
-    background: #e7f1ff;
-    box-shadow: none;
-    border-radius: 0px !important;
-}
-
-.wsus__schedule_item button::after {
-    display: none;
-}
-
-.wsus__schedule_item button img {
+.wsus__schedule_item .accordion button img {
     width: 100px !important;
     height: 100px !important;
     box-shadow: rgb(99 99 99 / 20%) 0px 1px 8px 0px;
@@ -1437,7 +1423,7 @@ button {
     margin-right: 10px;
 }
 
-.wsus__schedule_item button .text span {
+.wsus__schedule_item .accordion .text .time {
     background: #00acee26;
     color: var(--colorBlack);
     border-radius: 30px;
@@ -1446,7 +1432,7 @@ button {
     padding: 6px 10px 5px 10px;
 }
 
-.wsus__schedule_item button .text h5 {
+.wsus__schedule_item .accordion .text .title {
     font-size: 18px;
     font-weight: 600;
     margin: 17px 0px 7px 0px;
@@ -1454,9 +1440,10 @@ button {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: var(--colorBlack);
 }
 
-.wsus__schedule_item button .text p {
+.wsus__schedule_item .accordion .text .name {
     color: var(--colorPrimary);
     text-transform: capitalize;
 }
@@ -2928,9 +2915,9 @@ button {
     border-color: #e8e8e8;
 }
 
-.wsus__checkout_form input::placeholder {
-    color: var()--colorSecondary;
-}
+/* .wsus__checkout_form input::placeholder {
+    color: var(--colorSecondary);
+} */
 
 .wsus__checkout_form .form-check {
     margin-top: 10px;

@@ -724,44 +724,43 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="wsus__achedule_date">
-                        <div class="d-flex align-items-start">
-                            <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link yellow active" id="v-pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                    aria-selected="true">
-                                    <h4>first day</h4>
-                                    <p>15 july 2022</p>
+                        <nav class="d-flex">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link yellow active" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                                    <b>first day</b>
+                                    <span>15 july 2022</span>
                                 </button>
-                                <button class="nav-link orange" id="v-pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-profile" type="button" role="tab"
-                                    aria-controls="v-pills-profile" aria-selected="false">
-                                    <h4>second day</h4>
-                                    <p>16 july 2022</p>
+                                <button class="nav-link orange" id="nav-profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">
+                                    <b>second day</b>
+                                    <span>16 july 2022</span>
                                 </button>
-                                <button class="nav-link sky" id="v-pills-messages-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-messages" type="button" role="tab"
-                                    aria-controls="v-pills-messages" aria-selected="false">
-                                    <h4>third day</h4>
-                                    <p>17 july 2022</p>
+                                <button class="nav-link sky" id="nav-contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false">
+                                    <b>third day</b>
+                                    <span>17 july 2022</span>
                                 </button>
-                                <button class="nav-link blue" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">
-                                    <h4>fourth day</h4>
-                                    <p>18 july 2022</p>
+                                <button class="nav-link blue" id="nav-contact-tab1" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact1" role="tab" aria-controls="nav-contact1"
+                                    aria-selected="false">
+                                    <b>fourth day</b>
+                                    <span>18 july 2022</span>
                                 </button>
                             </div>
-                        </div>
+                        </nav>
                     </div>
                 </div>
-                <div class="col-xl-12">
+                <div class="col-12">
                     <div class="wsus__schedule_item">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                aria-labelledby="v-pills-home-tab">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-lg-6">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="flush-headingOne">
                                                     <button class="accordion-button collapsed" type="button"
@@ -769,12 +768,13 @@
                                                         aria-expanded="false" aria-controls="flush-collapseOne">
                                                         <img src="images/speaker_1.jpg" alt="schedule"
                                                             class="img-fluid w-100 img-thumbnail">
-                                                        <div class="text">
-                                                            <span>09:00 AM - 10.30 AM</span>
-                                                            <h5>Wait is Over! Stony Brook Captures Conference
-                                                            </h5>
-                                                            <p>By mamunur rashid</p>
-                                                        </div>
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -804,12 +804,13 @@
                                                         aria-expanded="false" aria-controls="flush-collapseOne1">
                                                         <img src="images/speaker_2.jpg" alt="schedule"
                                                             class="img-fluid w-100 img-thumbnail">
-                                                        <div class="text">
-                                                            <span>09:00 AM - 10.30 AM</span>
-                                                            <h5>Wait is Over! Stony Brook Captures Conference
-                                                            </h5>
-                                                            <p>By mamunur rashid</p>
-                                                        </div>
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseOne1" class="accordion-collapse collapse"
@@ -839,12 +840,13 @@
                                                         aria-expanded="false" aria-controls="flush-collapseOne2">
                                                         <img src="images/speaker_3.jpg" alt="schedule"
                                                             class="img-fluid w-100 img-thumbnail">
-                                                        <div class="text">
-                                                            <span>09:00 AM - 10.30 AM</span>
-                                                            <h5>Wait is Over! Stony Brook Captures Conference
-                                                            </h5>
-                                                            <p>By mamunur rashid</p>
-                                                        </div>
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseOne2" class="accordion-collapse collapse"
@@ -868,95 +870,100 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6 col-lg-6">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample1">
                                             <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingOne3">
+                                                <h2 class="accordion-header" id="flush-headingOne0">
                                                     <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3"
-                                                        aria-expanded="false" aria-controls="flush-collapseOne3">
-                                                        <img src="images/speaker_3.jpg" alt="schedule"
-                                                            class="img-fluid w-100 img-thumbnail">
-                                                        <div class="text">
-                                                            <span>09:00 AM - 10.30 AM</span>
-                                                            <h5>Wait is Over! Stony Brook Captures Conference
-                                                            </h5>
-                                                            <p>By mamunur rashid</p>
-                                                        </div>
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseOne3" class="accordion-collapse collapse"
-                                                    aria-labelledby="flush-headingOne3"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit. Delectus eveniet error maiores quis officia
-                                                            quia unde numquam repudiandae, quod dignissimos
-                                                            magnam nihil voluptate et porro fuga eos iste
-                                                            distinctio. Dolorumipsum dolor sit amet consectetur
-                                                            adipisicing elit. Delectus eveniet error maiores
-                                                            quis officia quia unde numquam repudiandae, quod
-                                                            dignissimos magnam nihil voluptate et porro fuga eos
-                                                            iste distinctio.
-                                                        </p>
-
-                                                        <span><b>Location:</b> Hall 1, Building A , Golden
-                                                            Street , Southafrica</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingOne4">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4"
-                                                        aria-expanded="false" aria-controls="flush-collapseOne4">
-                                                        <img src="images/speaker_2.jpg" alt="schedule"
-                                                            class="img-fluid w-100 img-thumbnail">
-                                                        <div class="text">
-                                                            <span>09:00 AM - 10.30 AM</span>
-                                                            <h5>Wait is Over! Stony Brook Captures Conference
-                                                            </h5>
-                                                            <p>By mamunur rashid</p>
-                                                        </div>
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseOne4" class="accordion-collapse collapse"
-                                                    aria-labelledby="flush-headingOne4"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit. Delectus eveniet error maiores quis officia
-                                                            quia unde numquam repudiandae, quod dignissimos
-                                                            magnam nihil voluptate et porro fuga eos iste
-                                                            distinctio. Dolorumipsum dolor sit amet consectetur
-                                                            adipisicing elit. Delectus eveniet error maiores
-                                                            quis officia quia unde numquam repudiandae, quod
-                                                            dignissimos magnam nihil voluptate et porro fuga eos
-                                                            iste distinctio.
-                                                        </p>
-
-                                                        <span><b>Location:</b> Hall 1, Building A , Golden
-                                                            Street , Southafrica</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingOne5">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5"
-                                                        aria-expanded="false" aria-controls="flush-collapseOne5">
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne0"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne0">
                                                         <img src="images/speaker_1.jpg" alt="schedule"
                                                             class="img-fluid w-100 img-thumbnail">
-                                                        <div class="text">
-                                                            <span>09:00 AM - 10.30 AM</span>
-                                                            <h5>Wait is Over! Stony Brook Captures Conference
-                                                            </h5>
-                                                            <p>By mamunur rashid</p>
-                                                        </div>
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
                                                     </button>
                                                 </h2>
-                                                <div id="flush-collapseOne5" class="accordion-collapse collapse"
-                                                    aria-labelledby="flush-headingOne5"
-                                                    data-bs-parent="#accordionFlushExample">
+                                                <div id="flush-collapseOne0" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne0"
+                                                    data-bs-parent="#accordionFlushExample1">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
+
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne10">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne10"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne10">
+                                                        <img src="images/speaker_2.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne10" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne10"
+                                                    data-bs-parent="#accordionFlushExample1">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
+
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne20">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne20"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne20">
+                                                        <img src="images/speaker_3.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne20" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne20"
+                                                    data-bs-parent="#accordionFlushExample1">
                                                     <div class="accordion-body">
                                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing
                                                             elit. Delectus eveniet error maiores quis officia
@@ -978,657 +985,700 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                aria-labelledby="v-pills-profile-tab">
+
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne">
-                                                    <img src="images/speaker_1.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne00">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne00"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne00">
+                                                        <img src="images/speaker_1.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne00" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne00"
+                                                    data-bs-parent="#accordionFlushExample2">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne1">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne1">
-                                                    <img src="images/speaker_2.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne1" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne1"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne12">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne12"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne12">
+                                                        <img src="images/speaker_2.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne12" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne12"
+                                                    data-bs-parent="#accordionFlushExample2">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne2">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne2">
-                                                    <img src="images/speaker_3.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne2" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne2"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne22">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne22"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne22">
+                                                        <img src="images/speaker_3.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne22" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne22"
+                                                    data-bs-parent="#accordionFlushExample2">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne3">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne3">
-                                                    <img src="images/speaker_3.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne3" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne3"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample3">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne0a">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne0a"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne0a">
+                                                        <img src="images/speaker_1.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne0a" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne0a"
+                                                    data-bs-parent="#accordionFlushExample3">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne4">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne4">
-                                                    <img src="images/speaker_2.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne4" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne4"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne10a">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne10a"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne10a">
+                                                        <img src="images/speaker_2.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne10a" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne10a"
+                                                    data-bs-parent="#accordionFlushExample3">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne5">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne5">
-                                                    <img src="images/speaker_1.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne5" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne5"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne20a">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne20a"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne20a">
+                                                        <img src="images/speaker_3.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne20a" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne20a"
+                                                    data-bs-parent="#accordionFlushExample3">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                aria-labelledby="v-pills-messages-tab">
+
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne">
-                                                    <img src="images/speaker_1.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample4">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne00b">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne00b"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne00b">
+                                                        <img src="images/speaker_1.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne00b" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne00b"
+                                                    data-bs-parent="#accordionFlushExample2">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne1">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne1">
-                                                    <img src="images/speaker_2.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne1" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne1"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne12b">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne12b"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne12b">
+                                                        <img src="images/speaker_2.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne12b" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne12b"
+                                                    data-bs-parent="#accordionFlushExample4">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne2">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne2">
-                                                    <img src="images/speaker_3.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne2" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne2"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne22b">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne22b"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne22b">
+                                                        <img src="images/speaker_3.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne22b" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne22b"
+                                                    data-bs-parent="#accordionFlushExample2">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne3">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne3">
-                                                    <img src="images/speaker_3.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne3" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne3"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample5">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne0ab">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne0ab"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne0ab">
+                                                        <img src="images/speaker_1.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne0ab" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne0ab"
+                                                    data-bs-parent="#accordionFlushExample5">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne4">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne4">
-                                                    <img src="images/speaker_2.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne4" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne4"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne10ab">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne10ab" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne10ab">
+                                                        <img src="images/speaker_2.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne10ab" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne10ab"
+                                                    data-bs-parent="#accordionFlushExample5">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne5">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne5">
-                                                    <img src="images/speaker_1.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne5" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne5"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne20ab">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne20ab" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne20ab">
+                                                        <img src="images/speaker_3.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne20ab" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne20ab"
+                                                    data-bs-parent="#accordionFlushExample5">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                aria-labelledby="v-pills-settings-tab">
+
+                            <div class="tab-pane fade" id="nav-contact1" role="tabpanel"
+                                aria-labelledby="nav-contact-tab1">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne">
-                                                    <img src="images/speaker_1.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample7">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne00bc">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne00bc" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne00bc">
+                                                        <img src="images/speaker_1.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne00bc" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne00bc"
+                                                    data-bs-parent="#accordionFlushExample7">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne1">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne1">
-                                                    <img src="images/speaker_2.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne1" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne1"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne12bc">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne12bc" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne12bc">
+                                                        <img src="images/speaker_2.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne12bc" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne12bc"
+                                                    data-bs-parent="#accordionFlushExample7">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
+
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne2">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne2">
-                                                    <img src="images/speaker_3.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne2" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne2"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne22bc">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne22bc" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne22bc">
+                                                        <img src="images/speaker_3.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne22bc" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne22bc"
+                                                    data-bs-parent="#accordionFlushExample7">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
+
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne3">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne3">
-                                                    <img src="images/speaker_3.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne3" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne3"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample55">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne0abd">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne0abd" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne0abd">
+                                                        <img src="images/speaker_1.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne0abd" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne0abd"
+                                                    data-bs-parent="#accordionFlushExample55">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne4">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne4">
-                                                    <img src="images/speaker_2.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne4" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne4"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne10abd">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne10abd" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne10abd">
+                                                        <img src="images/speaker_2.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne10abd" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne10abd"
+                                                    data-bs-parent="#accordionFlushExample55">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingOne5">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne5">
-                                                    <img src="images/speaker_1.jpg" alt="schedule"
-                                                        class="img-fluid w-100 img-thumbnail">
-                                                    <div class="text">
-                                                        <span>09:00 AM - 10.30 AM</span>
-                                                        <h5>Wait is Over! Stony Brook Captures Conference
-                                                        </h5>
-                                                        <p>By mamunur rashid</p>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne5" class="accordion-collapse collapse"
-                                                aria-labelledby="flush-headingOne5"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit. Delectus eveniet error maiores quis officia
-                                                        quia unde numquam repudiandae, quod dignissimos
-                                                        magnam nihil voluptate et porro fuga eos iste
-                                                        distinctio. Dolorumipsum dolor sit amet consectetur
-                                                        adipisicing elit. Delectus eveniet error maiores
-                                                        quis officia quia unde numquam repudiandae, quod
-                                                        dignissimos magnam nihil voluptate et porro fuga eos
-                                                        iste distinctio.
-                                                    </p>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne20abd">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne20abd" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne20abd">
+                                                        <img src="images/speaker_3.jpg" alt="schedule"
+                                                            class="img-fluid w-100 img-thumbnail">
+                                                        <span class="text">
+                                                            <b class="time">09:00 AM - 10.30 AM</b>
+                                                            <b class="title">Wait is Over! Stony Brook Captures
+                                                                Conference
+                                                            </b>
+                                                            <b class="name">By mamunur rashid</b>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne20abd" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne20abd"
+                                                    data-bs-parent="#accordionFlushExample55">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Delectus eveniet error maiores quis officia
+                                                            quia unde numquam repudiandae, quod dignissimos
+                                                            magnam nihil voluptate et porro fuga eos iste
+                                                            distinctio. Dolorumipsum dolor sit amet consectetur
+                                                            adipisicing elit. Delectus eveniet error maiores
+                                                            quis officia quia unde numquam repudiandae, quod
+                                                            dignissimos magnam nihil voluptate et porro fuga eos
+                                                            iste distinctio.
+                                                        </p>
 
-                                                    <span><b>Location:</b> Hall 1, Building A , Golden
-                                                        Street , Southafrica</span>
+                                                        <span><b>Location:</b> Hall 1, Building A , Golden
+                                                            Street , Southafrica</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
